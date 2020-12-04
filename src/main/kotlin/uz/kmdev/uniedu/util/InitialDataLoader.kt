@@ -9,7 +9,7 @@ import uz.kmdev.uniedu.constant.Roles.*
 import uz.kmdev.uniedu.model.security.Role
 import uz.kmdev.uniedu.model.security.User
 import uz.kmdev.uniedu.repo.RoleRepo
-import uz.kmdev.uniedu.util.user.UserRepo
+import uz.kmdev.uniedu.repo.user.UserRepo
 import javax.transaction.Transactional
 
 
