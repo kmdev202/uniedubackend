@@ -4,9 +4,8 @@ import uz.kmdev.uniedu.model.base.BaseModel
 import javax.persistence.*
 import javax.validation.constraints.Size
 
-
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 class User : BaseModel() {
 
     @Column(name = "username")
