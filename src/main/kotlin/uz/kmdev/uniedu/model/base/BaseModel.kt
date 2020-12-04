@@ -21,4 +21,26 @@ abstract class BaseModel {
     var modifiedBy: String? = null
     @JsonIgnore
     var modified: Date? = null
+
+    @PrePersist
+    fun onPrePersist() {
+        audit()
+    }
+
+    @PreUpdate
+    fun onPreUpdate() {
+        audit()
+    }
+
+    @PreRemove
+    fun onPreRemove() {
+        audit()
+    }
+
+    private fun audit() {
+        if (id == 0L) {
+            created = (Date())
+        }
+        modified = (Date())
+    }
 }
