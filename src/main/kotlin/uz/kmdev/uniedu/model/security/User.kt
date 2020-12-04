@@ -9,7 +9,7 @@ import javax.validation.constraints.Size
 class User : BaseModel() {
 
     @Column(name = "username")
-    var username: Long = 0L
+    var username: String = ""
 
     @Column(name = "firstname")
     @Size(max = 100)
